@@ -1,0 +1,15 @@
+# Ignored files
+/vendor/
+/node_modules/
+/public/storage
+/storage/*.key
+/storage/app/public
+/storage/framework/
+/.env
+/.env.backup
+/.phpunit.result.cache
+/Homestead.json
+/Homestead.yaml
+/npm-debug.log
+/yarn-error.log
+/composer.lock
