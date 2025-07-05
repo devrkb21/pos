@@ -43,7 +43,7 @@
     	
 		//Check for php version
 		$checks = array();
-        $checks['php'] = (PHP_MAJOR_VERSION >= 7 && PHP_MINOR_VERSION >=2) ? true : false;
+        $checks['php'] = (PHP_MAJOR_VERSION >= 8 && PHP_MINOR_VERSION >=0) ? true : false;
         $checks['php_version'] = PHP_VERSION;
 
         //Check for php extensions
@@ -61,7 +61,7 @@
 	<table class="table">
 
 		<tr>
-            <td>PHP >= 7.2</td>
+            <td>PHP >= 8.0</td>
             <td>
             	<?php
 					if($checks['php']){
