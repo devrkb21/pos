@@ -61,7 +61,7 @@
                   <div class="col-md-4">
                     <div class="form-group">
                         <label for="db_host">Database Host:*</label>
-                        <input type="text" class="form-control" id="db_host" name="DB_HOST" required placeholder="localhost / 127.0.0.1">
+                        <input type="text" class="form-control" id="db_host" name="DB_HOST" required value="localhost">
                     </div>
                   </div>
 
