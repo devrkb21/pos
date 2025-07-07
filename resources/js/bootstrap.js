@@ -23,7 +23,7 @@ window.Highcharts = require('highcharts');
 require('highcharts/modules/exporting')(Highcharts);  
 
 //import all the 3rd party libraries
-import Ladda from 'ladda';
+import * as Ladda from 'ladda'; // This is correct
 window.Ladda = Ladda;
 import 'icheck/icheck.min.js';
 window.PerfectScrollbar = require('perfect-scrollbar').default;
