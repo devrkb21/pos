@@ -1,5 +1,6 @@
 
-window._ = require('lodash');
+import _ from 'lodash';
+window._ = _;
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -13,18 +14,21 @@ try {
     //require('bootstrap-sass');
 } catch (e) {}
 
-window.moment = require('moment');
-require('moment-timezone');
+import moment from 'moment';
+window.moment = moment;
+import 'moment-timezone';
 
 window.Highcharts = require('highcharts');  
 // Load module after Highcharts is loaded
 require('highcharts/modules/exporting')(Highcharts);  
 
 //import all the 3rd party libraries
-window.Ladda = require('ladda');
-require('icheck/icheck.min.js');
+import Ladda from 'ladda';
+window.Ladda = Ladda;
+import 'icheck/icheck.min.js';
 window.PerfectScrollbar = require('perfect-scrollbar').default;
-window.screenfull = require('screenfull');
+import screenfull from 'screenfull';
+window.screenfull = screenfull;
 
 import jkanban from 'jkanban/dist/jkanban.min.js';
 import tinymce from 'tinymce/tinymce';
@@ -54,16 +58,19 @@ import 'tinymce/plugins/table';
 import 'tinymce/plugins/template';
 import 'tinymce/plugins/help';
 
-window.PatternLock = require('patternlock/dist/patternlock.min.js');
+import PatternLock from 'patternlock/dist/patternlock.min.js';
+window.PatternLock = PatternLock;
 
-window.Tagify = require('@yaireo/tagify/dist/tagify.min.js');
+import Tagify from '@yaireo/tagify/dist/tagify.min.js';
+window.Tagify = Tagify;
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
-window.axios = require('axios');
+import axios from 'axios';
+window.axios = axios;
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
@@ -89,7 +96,8 @@ if (token) {
 
 import Echo from 'laravel-echo'
 
-window.Pusher = require('pusher-js');
+import Pusher from 'pusher-js';
+window.Pusher = Pusher;
 
 //if pusher enabled initialize push notification
 if (typeof APP != 'undefined' && APP.PUSHER_ENABLED) {
